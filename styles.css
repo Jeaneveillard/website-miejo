@@ -196,7 +196,7 @@ p {
 /* Ticker / Marquee */
 .ticker-wrap {
     position: fixed;
-    top: 76px; /* Ajustement sous la barre de navigation */
+    top: 90px; /* Ajustement plus bas pour être sûr qu'elle n'est pas cachée par la barre de navigation */
     width: 100%;
     overflow: hidden;
     height: 40px;
