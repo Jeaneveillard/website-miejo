@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kibbeh Mie Joe - L'Authentique Saveur Libanaise</title>
+    <meta name="description" content="Commandez les meilleurs Kibbehs de la région chez Mie Joe. Commandes en gros à Fort Lauderdale et Miami.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mie Joe</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav_home">Accueil</a></li>
+            <li><a href="#about" data-i18n="nav_about">Nos Kibbehs</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Galerie</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#contact" class="btn-primary-small" data-i18n="nav_order">Commander</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-toggle">
+                <button id="lang-fr" class="active">FR</button>
+                <span>|</span>
+                <button id="lang-en">EN</button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge" data-i18n="hero_badge">Spécialité Libanaise Authentique</span>
+            <h1 data-i18n="hero_title">Kibbeh au bon goût et pimenté selon votre choix</h1>
+            <p data-i18n="hero_desc">Commandez en gros pour vos cérémonies et dégustez les meilleurs kibbehs dans la région de Fort Lauderdale, Miami et environs.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary" data-i18n="hero_btn_order">Passer ma commande</a>
+                <a href="#services" class="btn-secondary" data-i18n="hero_btn_services">Découvrir nos services</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/kibbey.png" alt="Kibbeh Mie Joe">
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="assets/images/kibbey.png" alt="Kibbeh délicieux">
+            </div>
+            <div class="about-text">
+                <h2 data-i18n="about_title">L'Authentique Goût du Liban</h2>
+                <p data-i18n="about_desc">Nos kibbehs sont préparés avec amour selon une recette traditionnelle libanaise, garantissant une croûte parfaitement dorée et un cœur moelleux et savoureux.</p>
+                <div class="features">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3 data-i18n="flavor_mild_title">Au Bon Goût (Doux)</h3>
+                            <p data-i18n="flavor_mild_desc">Parfait pour ceux qui préfèrent des saveurs riches et délicates sans la chaleur.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-pepper-hot"></i>
+                        <div>
+                            <h3 data-i18n="flavor_spicy_title">Pimenté</h3>
+                            <p data-i18n="flavor_spicy_desc">Une explosion de saveurs relevée par du piment frais pour les amateurs de sensations fortes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery fade-up">
+        <h2 data-i18n="gallery_title" style="text-align: center;">Notre Galerie</h2>
+        <p class="section-subtitle" data-i18n="gallery_subtitle">Un aperçu de nos délicieux plateaux de kibbehs</p>
+        <div class="gallery-grid">
+            <img class="gallery-img fade-up" src="assets/images/Kibbey-hero1.jpeg" alt="Kibbeh">
+            <img class="gallery-img fade-up" src="assets/images/kibbey-hero2.jpeg" alt="Kibbeh">
+            <img class="gallery-img fade-up" src="assets/images/kibbey-hero3.jpeg" alt="Kibbeh">
+            <img class="gallery-img fade-up" src="assets/images/kibbey-hero4.jpeg" alt="Kibbeh">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 data-i18n="services_title">Nos Services</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">Adaptés à tous vos besoins événementiels</p>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="fas fa-boxes"></i></div>
+                <h3 data-i18n="srv_wholesale_title">Commandes en Gros</h3>
+                <p data-i18n="srv_wholesale_desc">Idéal pour les réunions familiales, entreprises et grands rassemblements. Tarifs préférentiels pour les grandes quantités.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrapper"><i class="fas fa-glass-cheers"></i></div>
+                <h3 data-i18n="srv_ceremony_title">Spécial Cérémonies</h3>
+                <p data-i18n="srv_ceremony_desc">Mariages, baptêmes, anniversaires... Ajoutez une touche d'authenticité à tous vos événements spéciaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-contact">
+        <div class="cta-box">
+            <h2 data-i18n="contact_title">Prêt à savourer les meilleurs Kibbehs ?</h2>
+            <p data-i18n="contact_desc">Contactez Marie Josée Vaval dès aujourd'hui pour passer votre commande.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:786-413-7988">786-413-7988</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mvaval43@gmail.com">mvaval43@gmail.com</a>
+                </div>
+            </div>
+            <div class="payment-info" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                <h3 data-i18n="payment_title" style="font-size: 1.3rem; margin-bottom: 0.5rem; color: white;">Moyens de paiement acceptés</h3>
+                <p data-i18n="payment_desc" style="margin-bottom: 0; font-size: 1.1rem; color: rgba(255,255,255,0.9);">Nous acceptons les paiements par Zelle ou transfert direct.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Mie Joe</div>
+            <p>&copy; 2026 Kibbeh Mie Joe. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
