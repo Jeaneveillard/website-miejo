@@ -73,6 +73,7 @@ const translations = {
         hero_badge: "Spécialité Libanaise Authentique",
         hero_title: "Kibbeh au bon goût et pimenté selon votre choix",
         hero_desc: "Commandez en gros pour vos cérémonies et dégustez les meilleurs kibbehs.",
+        ticker_text: "✨ Un prix spécial est réservé pour les cérémonies : Mariages, Baptêmes, Anniversaires ✨",
         hero_btn_order: "Passer ma commande",
         hero_btn_services: "Découvrir nos services",
         about_title: "L'Authentique Goût du Liban",
@@ -104,6 +105,7 @@ const translations = {
         hero_badge: "Authentic Lebanese Specialty",
         hero_title: "Mild or Spicy Kibbeh of your choice",
         hero_desc: "Order wholesale for your ceremonies and enjoy the best kibbehs.",
+        ticker_text: "✨ A special price is reserved for ceremonies: Weddings, Baptisms, Birthdays ✨",
         hero_btn_order: "Place my order",
         hero_btn_services: "Discover our services",
         about_title: "The Authentic Taste of Lebanon",
@@ -139,6 +141,14 @@ function setLanguage(lang) {
             element.textContent = translations[lang][key];
         }
     });
+
+    // Mettre à jour la barre défilante
+    const tickerText = translations[lang]['ticker_text'];
+    if (tickerText) {
+        document.querySelectorAll('.ticker__item').forEach(item => {
+            item.textContent = tickerText;
+        });
+    }
 
     document.getElementById('lang-fr').classList.toggle('active', lang === 'fr');
     document.getElementById('lang-en').classList.toggle('active', lang === 'en');
